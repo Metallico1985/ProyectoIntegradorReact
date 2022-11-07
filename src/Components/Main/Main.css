@@ -69,6 +69,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 1000px) {
   .gridContainer {
     margin: 0 auto;
@@ -77,4 +78,18 @@
     justify-content: center;
     background-color: #f7f7f7;
   }
+=======
+@media (min-width:1000px) {
+    .mainAppContainer {
+        background-color: #f7f7f7;
+    }
+
+    .gridContainer {
+        margin: 0 auto;
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        background-color: #f7f7f7;
+    }
+>>>>>>> e9e078b2a7f3884fac454951760358c286ffebc5
 }
