@@ -68,6 +68,9 @@
 }
 
 @media (min-width:1000px) {
+    .mainAppContainer {
+        background-color: #f7f7f7;
+    }
 
     .gridContainer {
         margin: 0 auto;

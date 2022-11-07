@@ -11,7 +11,7 @@ function SearchBar(props) {
 
     return (
         <div className='searchBarContainer'>
-            <input type='text' placeholder='🔎Buscar' onChange={handleInput}></input>
+            <input type='text' placeholder='🔎Buscar ' onChange={handleInput}></input>
         </div>
     )
 }
