@@ -39,7 +39,7 @@ function Home() {
   const search = (x) => {
     if (x !== "") {
       const filtrados = [...list].filter((pokemon) => {
-        if (pokemon.name.toLowerCase().includes(x)) {
+        if (pokemon.name.toLowerCase().includes(x) || pokemon.id.includes(x)) {
           return true;
         } else return false;
       });
