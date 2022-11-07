@@ -21,7 +21,12 @@
 .logo img {
     width: 10%;
     padding: 0.8rem;
+     transition: 1s ease;
 
+}
+}
+.logo img:hover{
+    width: 15%;
 }
 
 button {
