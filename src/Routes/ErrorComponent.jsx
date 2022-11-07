@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import './Error.css'
 // import image from 'public/Images/pikachuRoto.jpg'
 
@@ -16,4 +16,4 @@ function ErrorComponent() {
     )
 }
 
-export default ErrorComponent
+export default ErrorComponent;
