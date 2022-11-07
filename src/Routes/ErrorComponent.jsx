@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function ErrorComponent() {
-    return (
-        <div>Error 404</div>
-    )
+  return <div>Prueba de git Error 404</div>;
 }
 
-export default ErrorComponent
+export default ErrorComponent;
