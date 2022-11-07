@@ -236,9 +236,6 @@
 /*////////////////////////////DESKTOP////////////////////////////////*/
 
 @media(min-width:1000px) {
-    html {
-        background-color: white;
-    }
 
     .mainDetail {
         margin: 5rem auto;
@@ -267,13 +264,12 @@
     }
 
     .statsCard {
-        bottom: 18rem;
+        bottom: 20rem;
         left: 8rem;
         margin: 0 auto;
         height: 85%;
         width: 50%;
         background-color: white;
-        /* z-index: +1; */
         border-radius: 2%;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     }
