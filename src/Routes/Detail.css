@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.mainDetail {
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nextBack {
+    margin: 0 auto;
+    width: 90vw;
+    top: 9rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nextBack img {
+    width: 3%;
+
+}
+
+.headerDetail {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: +2;
+}
+
+.nameDetContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.nameDetContainer h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nameDetContainer h4 {
+    font-weight: 700;
+}
+
+.nameDetContainer img {
+    height: auto;
+    margin-right: 1rem;
+}
+
+.pokeImg {
+    width: 60%;
+    position: relative;
+    bottom: 0.5rem;
+    left: 5rem;
+    z-index: +3;
+    transition: 1s ease;
+}
+
+.pokeImg:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    filter: drop-shadow(10px 15px 10px #505053);
+}
+
+.pokeBall {
+
+    position: absolute;
+    left: 9.5rem;
+    top: 0.5rem;
+    z-index: 1;
+    opacity: 0.1;
+    color: white;
+}
+
+.pokeBall img {
+    width: 100%;
+}
+
+.statsCard {
+    bottom: 4rem;
+    margin: 0 auto;
+    height: 71%;
+    width: 98%;
+    background-color: white;
+    position: relative;
+    z-index: +1;
+    border-radius: 2%;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+
+.typeBtn {
+    border-radius: 2rem;
+    padding: 0.2rem 1rem;
+    color: white;
+    margin: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.aboutTitle {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutTitle h3 {
+    font-weight: 700;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    gap: 1rem;
+}
+
+.dataCont {
+    display: flex;
+    flex-direction: column;
+    border-right: 0.5px dotted gray;
+    text-align: center;
+    padding-right: 2rem;
+    gap: 1rem;
+    font-weight: 200;
+}
+
+.dataCont p {
+    font-size: 10px;
+}
+
+.dataCont img {
+    margin-right: 0.5rem;
+}
+
+.data {
+    display: flex;
+}
+
+.moves {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moves p {
+    font-size: 10px;
+}
+
+.description {
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.statsTitle {
+    padding: 1rem;
+    text-align: center;
+}
+
+.statsTitle h3 {
+    font-weight: 700;
+}
+
+.statName {
+
+    width: 30%;
+    text-align: center;
+    /* border-right: 1px solid #6b6c6b; */
+}
+
+.slider {
+    padding-right: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/*//////////////////MEDIA QUERY//////////////////////////////*/
+/*////////////////////////TABLET////////////////////////////////*/
+
+@media (min-width: 768px) {
+
+    .pokeImg {
+        width: 60%;
+        position: relative;
+        bottom: 0.5rem;
+        left: 10rem;
+        z-index: +3;
+        transition: 1s ease;
+    }
+
+    .pokeBall {
+        display: none;
+    }
+
+    .statsCard {
+        bottom: 4.5rem;
+        margin: 0 auto;
+        height: 55%;
+        width: 98%;
+        background-color: white;
+        position: relative;
+        z-index: +1;
+        border-radius: 2%;
+    }
+
+    .typeBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding: 0.2rem 1rem;
+        color: white;
+        margin: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////*/
+/*////////////////////////////DESKTOP////////////////////////////////*/
+
+@media(min-width:1000px) {
+    html {
+        background-color: white;
+    }
+
+    .mainDetail {
+        margin: 5rem auto;
+        width: 50%;
+        height: 75vh;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 45vw;
+        top: 13rem;
+    }
+
+    .nextBack img {
+        width: 2%;
+    }
+
+    .pokeImg {
+        width: 30%;
+        top: 3rem;
+        left: 5rem;
+        z-index: +3;
+        transition: 1s ease;
+    }
+
+    .statsCard {
+        bottom: 18rem;
+        left: 8rem;
+        margin: 0 auto;
+        height: 85%;
+        width: 50%;
+        background-color: white;
+        /* z-index: +1; */
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+}
