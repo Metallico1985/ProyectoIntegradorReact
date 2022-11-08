@@ -1,10 +1,9 @@
 import React from "react";
 import Main from "../Components/Main/Main";
-// import pokemones from "../Api/Data";
 import { useState, useEffect } from "react";
 import SearchBar from "../Components/Header/SearchBar/SearchBar";
 import LogoAndButton from "../Components/Header/LogoAndButton/LogoAndButton";
-//prueba
+
 function Home() {
   const [list, setList] = useState([]);
   const [resetear, setResetear] = useState(false);
@@ -23,19 +22,7 @@ function Home() {
       });
   }, [resetear]);
 
-  /* const traerDatos = () => {
-    fetch("http://localhost:3000/pokemones", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setList(data);
-      })
-      .catch((error) => {
-        alert(error);
-      });
-  }; */
+
   const search = (x) => {
     if (x !== "") {
       const filtrados = [...list].filter((pokemon) => {
@@ -49,6 +36,7 @@ function Home() {
       setResetear(!resetear);
     }
   };
+
 
   const [active, setActive] = useState(true);
 

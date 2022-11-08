@@ -9,9 +9,8 @@ function ErrorComponent() {
                 <p className='error'>Error 404</p>
                 <p>Tecleaste cualquiera papu...</p>
                 <img src="../Images/pikachuRoto.jpg" alt="pikachu todo roto" />
-                <Link to="/"><button>Home</button></Link>
             </div>
-
+            <Link to="/"><button>Home</button></Link>
         </div>
     )
 }

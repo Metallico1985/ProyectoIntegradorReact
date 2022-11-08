@@ -13,7 +13,7 @@ function Main(props) {
                         style={{ borderColor: item.color[0] }}
                     >
                         <div className="cardId" style={{ color: item.color[0] }}>
-                            {"#" + item.id}
+                            <span>{"#" + item.id}</span>
                         </div>
                         <div className="cardImg">
                             <img src={item.img} alt="" />
@@ -22,7 +22,7 @@ function Main(props) {
                             className="cardName"
                             style={{ backgroundColor: item.color[0] }}
                         >
-                            {item.name}
+                            <span>{item.name}</span>
                         </div>
                     </Link>
                 ))}

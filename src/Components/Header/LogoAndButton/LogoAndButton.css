@@ -2,9 +2,9 @@
 
 .mainContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 3rem;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
 }
@@ -18,28 +18,29 @@
 }
 
 .logo img {
-    width: 10%;
-    padding: 0.8rem;
-    transition: 1s ease;
-
-}
-
-.logo img:hover {
     width: 15%;
 }
 
-button {
-    border: none;
-
+/*////////////////RESPONSIVE/////////////////*/
+@media(min-width: 768px) {
+    .mainContainer {
+        padding-top: 3rem;
+    }
 }
 
-/*////////////////RESPONSIVE/////////////////*/
-
-@media (min-width: 768px) {
-
+@media(min-width: 1000px) {
     .mainContainer {
+        padding: 1rem;
+    }
 
-        justify-content: space-evenly;
-        font-size: 24px;
+    .logo img {
+        width: 15%;
+        padding-right: 0.8rem;
+        transition: 1s ease;
+    }
+
+    .logo img:hover {
+        width: 10%;
+        transform: perspective(25%)
     }
 }

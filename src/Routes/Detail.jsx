@@ -1,5 +1,4 @@
 import React from "react";
-// import pokemones from "../Api/Data";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import "./Detail.css";
 import {

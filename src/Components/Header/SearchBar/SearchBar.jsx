@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchBar.css";
+import { TextField } from "@mui/material"
 
 function SearchBar(props) {
   const handleInput = (e) => {
@@ -8,7 +9,16 @@ function SearchBar(props) {
 
   return (
     <div className='searchBarContainer'>
-      <input type='text' placeholder='🔎Buscar' onChange={handleInput}></input>
+      {/* <input type='text' placeholder='🔎  Buscar' onChange={handleInput}></input> */}
+      <TextField
+        className="searchMui"
+        size="small"
+        id="searchBar"
+        placeholder="🔎 Search"
+        type="search"
+        variant="outlined"
+        onChange={handleInput}
+      />
     </div>
   )
 }
