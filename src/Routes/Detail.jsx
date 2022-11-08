@@ -89,6 +89,9 @@ function Detail() {
             <img src="../Icons/NextLeft.png" alt="" onClick={previous} />
             <img src="../Icons/NextRight.png" alt="" onClick={next} />
           </div>
+          {/* /////////////////////////////AUDIO////////////////////////////////////////// */}
+          <audio src={item.sonido} autoplay="autoplay"></audio>
+          {/* ////////////////////////////////////////////////////////////////////////// */}
           <img className="pokeImg" src={item.img} alt="" />
           <div className="statsCard">
             <div className="typeContainer">

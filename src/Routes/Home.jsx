@@ -8,10 +8,12 @@ function Home() {
   const [list, setList] = useState([]);
   const [resetear, setResetear] = useState(false);
 
+
   useEffect(() => {
     fetch("http://localhost:3000/pokemones", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
+
     })
       .then((response) => response.json())
       .then((data) => {
@@ -70,7 +72,10 @@ function Home() {
 
   return (
     <div className="mainAppContainer">
+
       <header>
+        <audio src="../Music/pokemon-intro.mp3" autoplay="autoplay"></audio>
+
         <LogoAndButton
           sortById={sortById}
           sortByName={sortByName}
