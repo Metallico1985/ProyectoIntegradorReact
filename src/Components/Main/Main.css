@@ -20,8 +20,9 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: ease 1s all;
 }
+
 .card:hover {
-  transform: translateX(-5%);
+  transform: translateY(-5%);
 }
 
 .cardId {
@@ -55,7 +56,6 @@
     width: auto;
     display: flex;
     justify-content: center;
-    background-color: #f7f7f7;
   }
 
   .cardContainer {
@@ -71,13 +71,19 @@
 
 @media (min-width: 1000px) {
   .mainAppContainer {
-    background-color: #f7f7f7;
+    background-image: url(/public/Images/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: none;
+    background-size: cover;
   }
+
   .gridContainer {
     margin: 0 auto;
     width: 70vw;
     display: flex;
     justify-content: center;
-    background-color: #f7f7f7;
+  }
+
+  .card {
+    backdrop-filter: blur(15px);
   }
 }

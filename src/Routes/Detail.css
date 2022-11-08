@@ -179,7 +179,6 @@
 
     width: 30%;
     text-align: center;
-    /* border-right: 1px solid #6b6c6b; */
 }
 
 .slider {
@@ -236,13 +235,21 @@
 /*////////////////////////////DESKTOP////////////////////////////////*/
 
 @media(min-width:1000px) {
+    .backCont {
+        padding-top: 6rem;
+        height: 100vh;
+        background-image: url(/public/Images/wallpaperflare.com_wallpaper.jpg);
+        background-repeat: none;
+        background-size: cover;
+    }
 
     .mainDetail {
-        margin: 5rem auto;
+        margin: 0 auto;
         width: 50%;
         height: 75vh;
         border-radius: 15px;
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
     }
 
     .nextBack {

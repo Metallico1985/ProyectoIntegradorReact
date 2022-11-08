@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .errorContainer {
+    margin: 0 auto;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +11,21 @@
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     text-shadow: 9px 9px 5px rgba(150, 150, 150, 1);
+    transform: scale(1) rotate(0);
+    transition: transform 750ms ease-in-out 0s;
+}
+
+.errorContainer:is(:hover, :focus) {
+    transition: transform 750ms ease-in-out 0s;
+    transform: scale(1.2) rotate(360deg);
+}
+
+.errorContainer button {
+    padding: 1rem 2rem;
+}
+
+.errorContainer button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .error {

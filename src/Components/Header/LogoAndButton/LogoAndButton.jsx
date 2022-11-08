@@ -11,15 +11,15 @@ function LogoAndButton(props) {
                 <div className="btnContainer">
                     {props.active ? (
                         <div className="sortByName">
-                            <button onClick={props.sortByName}>
-                                <img src="../Icons/SortById.png" alt="" />
-                            </button>
+
+                            <img src="../Icons/SortById.png" alt="" onClick={props.sortByName}></img>
+
                         </div>
                     ) : (
                         <div className="sortById">
-                            <button onClick={props.sortById}>
-                                <img src="../Icons/SortByName.png" alt="" />
-                            </button>
+
+                            <img src="../Icons/SortByName.png" alt="" onClick={props.sortById}></img>
+
                         </div>
                     )}
                 </div>

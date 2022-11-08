@@ -68,7 +68,7 @@ function Detail() {
   };
 
   return (
-    <div className="respFlex">
+    <div className="backCont">
       {item && (
         <div className="mainDetail" style={{ backgroundColor: item.color[0] }}>
           <div className="pokeBall">
