@@ -6,14 +6,12 @@ import LogoAndButton from "../Components/Header/LogoAndButton/LogoAndButton";
 
 function Home() {
   const [list, setList] = useState([]);
-  const [resetear, setResetear] = useState(false);
-
+  const [reset, setReset] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3000/pokemones", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
-
     })
       .then((response) => response.json())
       .then((data) => {
@@ -22,8 +20,7 @@ function Home() {
       .catch((error) => {
         alert(error);
       });
-  }, [resetear]);
-
+  }, [reset]);
 
   const search = (x) => {
     if (x !== "") {
@@ -35,10 +32,9 @@ function Home() {
       setList(filtrados);
     } else {
       //Cambio el estado del array de dependecias del useEffect para que se ejecute el fetch nuevamente.
-      setResetear(!resetear);
+      setReset(!reset);
     }
   };
-
 
   const [active, setActive] = useState(true);
 
@@ -72,10 +68,8 @@ function Home() {
 
   return (
     <div className="mainAppContainer">
-
       <header>
         <audio src="../Music/pokemon-intro.mp3" autoplay="autoplay"></audio>
-
         <LogoAndButton
           sortById={sortById}
           sortByName={sortByName}
@@ -83,7 +77,6 @@ function Home() {
         />
         <SearchBar search={search} />
       </header>
-
       <Main list={list} />
     </div>
   );

@@ -90,7 +90,7 @@ function Detail() {
             <img src="../Icons/NextRight.png" alt="" onClick={next} />
           </div>
           {/* /////////////////////////////AUDIO////////////////////////////////////////// */}
-          <audio src={item.sonido} autoplay="autoplay"></audio>
+          <audio src={item.sound} autoplay="autoplay"></audio>
           {/* ////////////////////////////////////////////////////////////////////////// */}
           <img className="pokeImg" src={item.img} alt="" />
           <div className="statsCard">
