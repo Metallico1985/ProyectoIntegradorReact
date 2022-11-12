@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+CORRECCIONES !!!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ESTILO DE CODIGO
 
-## Available Scripts
+- Código legible. Uso de chakra ui y material ui. Poco uso de etiquetas semánticas, muchos divs.
+- No hay desestructuración de objeto en las props.
+- Buena estructura de los componentes al colocar los useState al principio, buena práctica!
+- Correcto nombres de funciones y estados.
+- Correcta la separación de responsabilidades en los componentes padres pertinentes.
+- Ojo con el código comentado en el componente Detail.
 
-In the project directory, you can run:
+FUNCIONALIDADES
 
-### `npm start`
+- Requisitos funcionales COMPLETOS.
+- La aplicación funciona correctamente en modo Desktop y mobile.
+- Algunas funciones pueden ser planteadas de otra forma para ser reutilizadas y disminuir el código.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+COMPONENTES
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Separación clara de componentes, funcionalidad en los padres.
+- Abstracción correcta en el uso de los componentes SearchBar, Main y LogoAndButton.
+- Se podría mejorar el componente Detail diviendolo en hijos, para la sección stats por ejemplo, ya que quedaron muchas líneas de código.
+- Se podría mejorar el componente main al crear un componente hijo que se encargue de visualizar cada pokemon.
+- En general, muy buena separación de componentes. Bastante prolijo.
 
-### `npm test`
+ESTRUCTURA
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Estructura del proyecto ok. La carpeta Routes podría estar mejor organizada, estructura en carpetas ya que hay estilos para cada componente.
+- Aplicación de pagina 404 en errores de ruteo.
+- Archivo de datos en carpeta API separada al mismo nivel de src, muy bueno.
+- Imágenes en carpeta public.
+- Falta limpiar un poco, hay carpetas vacías y el componente App.jsx ya no tiene razón de ser tampoco.
 
-### `npm run build`
+LIBRERÍAS EXTERNAS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Uso de React Router, chakra-ui, material-ui, framer-motion y emotion.
+- Buen uso de dichas librerías.
+- Buena aplicación de componentes de chakra-ui y material ui, se entiende el código dentro de cada componente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+PROPS, STATES, useParams, useEffect, useNavigate y Link
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Buen uso de props, states y librería react router.
+- Las props está bueno desestructurarlas, mejora el entendimiento en el pasaje de props.
+- Se utilizó Link y useNavigate.
 
-### `npm run eject`
+COMENTARIOS Y FEEDBACK
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Buen proyecto chicos!!! Muy buen trabajo en la estructura general del proyecto. Fue sencillo corregirlo ya que cada componente
+  cumple su razón de ser y está bien planteada la carpeta Routes. El día de mañana si siguen aplicando buenas prácticas,
+  van a poder hacer trabajos muy prolijos, característica de todo buen programador, que se busca con frecuencia en el mercado IT!
+- Una recomendación, tratar de pensar funciones más genéricas para abreviar el código.
