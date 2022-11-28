@@ -8,23 +8,24 @@ import {
   ChakraProvider,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import Data from '../Api (Sin uso)/Data'
 
 function Detail() {
-  const [pokemones, setPokemones] = useState([]);
+  const [pokemones, setPokemones] = useState(Data);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/pokemones", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setPokemones(data);
-      })
-      .catch((error) => {
-        alert(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/pokemones", {
+  //     method: "GET",
+  //     headers: { "Content-Type": "application/json" },
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setPokemones(data);
+  //     })
+  //     .catch((error) => {
+  //       alert(error);
+  //     });
+  // }, []);
 
   const { id } = useParams();
   const navigate = useNavigate();
@@ -265,47 +266,3 @@ function Detail() {
 
 export default Detail;
 
-// //  const previous1 = () => {
-//     if (pokemones[indexActual - 1]) {
-//       navigate(`/detail/${pokemones[indexActual - 1].id}`);
-//     } else {
-//       navigate(`/detail/${pokemones[pokemones.length - 1].id}`);
-//     }
-//   }; */
-
-/*////////////////////////////////////////////////////////////////////////////*/
-
-//Busco las posiciones de los pokemones anterior y posterior
-// El map devuelve undefined en los casos que poke.id!=id
-// hago un filter para eliminar los undefined
-// const posiciones = pokemones.map((poke, index) => {
-//     if (poke.id === id) {
-//         if (index == 0) {
-//             return { indexAnterior: pokemones.length - 1, indexPosterior: index + 1 }
-//         } else if (index == pokemones.length - 1) {
-//             return { indexAnterior: index - 1, indexPosterior: 0 }
-//         }
-//         return { indexAnterior: index - 1, indexPosterior: index + 1 }
-//     }
-
-// }).filter(x => { return x })
-
-// const derecha = () => {
-//     if (posiciones.length) {
-//         const objPosicion = posiciones[0]
-//         //Busco el id del pokemon en la base de datos en la posicion que corresponda
-//         const pokemon = pokemones[objPosicion.indexPosterior]
-//         const pokeId = pokemon.id
-//         navigate("/detail/" + pokeId)
-
-//     }
-// }
-
-// const izquierda = () => {
-//     if (posiciones.length) {
-//         const objPosicion = posiciones[0]
-//         const pokemon = pokemones[objPosicion.indexAnterior]
-//         const pokeId = pokemon.id
-//         navigate("/Detail/" + pokeId)
-//     }
-// }

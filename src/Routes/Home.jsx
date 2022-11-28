@@ -3,25 +3,27 @@ import Main from "../Components/Main/Main";
 import { useState, useEffect } from "react";
 import SearchBar from "../Components/Header/SearchBar/SearchBar";
 import LogoAndButton from "../Components/Header/LogoAndButton/LogoAndButton";
+import Data from '../Api (Sin uso)/Data';
 
 function Home() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(Data);
   const [resetear, setResetear] = useState(false);
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/pokemones", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
+    // fetch("http://localhost:3000/pokemones", {
+    //   method: "GET",
+    //   headers: { "Content-Type": "application/json" },
 
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setList(data);
-      })
-      .catch((error) => {
-        alert(error);
-      });
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     setList(data);
+    //   })
+    //   .catch((error) => {
+    //     alert(error);
+    //   });
+    setList(Data);
   }, [resetear]);
 
 
