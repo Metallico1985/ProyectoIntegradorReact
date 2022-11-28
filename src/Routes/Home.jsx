@@ -41,7 +41,6 @@ function Home() {
     }
   };
 
-
   const [active, setActive] = useState(true);
 
   const sortById = () => {
@@ -74,10 +73,8 @@ function Home() {
 
   return (
     <div className="mainAppContainer">
-
       <header>
         <audio src="../Music/pokemon-intro.mp3" autoplay="autoplay"></audio>
-
         <LogoAndButton
           sortById={sortById}
           sortByName={sortByName}
@@ -85,7 +82,6 @@ function Home() {
         />
         <SearchBar search={search} />
       </header>
-
       <Main list={list} />
     </div>
   );

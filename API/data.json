@@ -2,7 +2,7 @@
     "pokemones": [
         {
             "id": "001",
-            "sonido": "../Music/bulbasaur.mp3",
+            "sound": "../Music/bulbasaur.mp3",
             "name": "Bulbasaur",
             "color": [
                 "#74CB48",
@@ -31,7 +31,7 @@
         },
         {
             "id": "004",
-            "sonido": "../Music/charmander.mp3",
+            "sound": "../Music/charmander.mp3",
             "name": "Charmander",
             "color": [
                 "#F57D31"
@@ -58,7 +58,7 @@
         },
         {
             "id": "007",
-            "sonido": "../Music/squirtle.mp3",
+            "sound": "../Music/squirtle.mp3",
             "name": "Squirtle",
             "color": [
                 "#6493EB"
@@ -85,7 +85,7 @@
         },
         {
             "id": "012",
-            "sonido": "../Music/butterfree.ogg",
+            "sound": "../Music/butterfree.ogg",
             "name": "Butterfree",
             "color": [
                 "#A78723",
@@ -114,7 +114,7 @@
         },
         {
             "id": "025",
-            "sonido": "../Music/pikachu.mp3",
+            "sound": "../Music/pikachu.mp3",
             "name": "Pikachu",
             "color": [
                 "#F9CF30"
@@ -141,7 +141,7 @@
         },
         {
             "id": "092",
-            "sonido": "../Music/gastly.mp3",
+            "sound": "../Music/gastly.mp3",
             "name": "Gastly",
             "color": [
                 "#70559B",
@@ -169,7 +169,7 @@
         },
         {
             "id": "132",
-            "sonido": "../Music/Ditto.mp3",
+            "sound": "../Music/Ditto.mp3",
             "name": "Ditto",
             "color": [
                 "#AAA67F"
@@ -196,7 +196,7 @@
         },
         {
             "id": "152",
-            "sonido": "../Music/mew.mp3",
+            "sound": "../Music/mew.mp3",
             "name": "Mew",
             "color": [
                 "#FB5584"
@@ -222,7 +222,7 @@
         },
         {
             "id": "304",
-            "sonido": "../Music/aron.mp3",
+            "sound": "../Music/aron.mp3",
             "name": "Aron",
             "color": [
                 "#B7B9D0",
