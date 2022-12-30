@@ -1,6 +1,7 @@
 .searchBarContainer {
     text-align: center;
-    background-color: #F7F7F7;
+    background-color: rgb(47, 47, 47);
+    ;
 }
 
 .searchBarContainer input {

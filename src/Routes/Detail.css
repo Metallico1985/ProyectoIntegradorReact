@@ -62,14 +62,6 @@
     transition: 1s ease;
 }
 
-.pokeImg:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 1s ease;
-    filter: drop-shadow(10px 15px 10px #505053);
-}
-
 .pokeBall {
 
     position: absolute;
@@ -179,7 +171,7 @@
 
     width: 30%;
     text-align: center;
-    /* border-right: 1px solid #6b6c6b; */
+    border-right: 1px solid #6b6c6b;
 }
 
 .slider {
@@ -189,28 +181,35 @@
 }
 
 /*//////////////////MEDIA QUERY//////////////////////////////*/
-/*////////////////////////TABLET////////////////////////////////*/
+/* //////////////////////SMALL Mobile///////////////////////*/
+@media (min-width: 360px) {
 
-@media (min-width: 768px) {
+    .mainDetail {
+        height: auto;
 
-    .pokeImg {
-        width: 60%;
-        position: relative;
-        bottom: 0.5rem;
-        left: 10rem;
-        z-index: +3;
-        transition: 1s ease;
     }
 
     .pokeBall {
         display: none;
     }
 
+    .pokeImg {
+        width: 50%;
+    }
+
+    .nextBack {
+        width: 95%;
+    }
+
+    .nextBack img {
+        width: 3%;
+    }
+
     .statsCard {
-        bottom: 4.5rem;
+        bottom: 3.5rem;
         margin: 0 auto;
-        height: 55%;
-        width: 98%;
+        height: 100vh;
+        width: 85%;
         background-color: white;
         position: relative;
         z-index: +1;
@@ -232,10 +231,136 @@
     }
 }
 
-/*////////////////////////////////////////////////////////////////*/
-/*////////////////////////////DESKTOP////////////////////////////////*/
+/*////////////////////////TABLET////////////////////////////////*/
 
-@media(min-width:1000px) {
+@media (min-width: 768px) {
+
+    .mainDetail {
+        height: 100vh;
+        width: auto;
+    }
+
+    .pokeBall {
+        display: none;
+    }
+
+    .pokeImg {
+        width: 40%;
+        position: relative;
+        bottom: 0.5rem;
+        left: 14rem;
+    }
+
+    .statsCard {
+        bottom: 5rem;
+        margin: 0 auto;
+        height: 60%;
+        width: 90%;
+        background-color: white;
+        position: relative;
+        border-radius: 2%;
+    }
+
+    .typeBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding: 0.2rem 1rem;
+        color: white;
+        margin: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+/*//////////////////////////Generic Notebook//////////////////////////////////////*/
+@media(min-width:1280px) {
+
+    .mainDetail {
+        margin: 5rem auto;
+        width: 60%;
+        height: 80vh;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 55vw;
+        top: 15rem;
+    }
+
+    .nextBack img {
+        width: 2%;
+    }
+
+    .pokeImg {
+        width: 30%;
+        top: 4rem;
+        left: 5rem;
+        z-index: +3;
+        transition: 1s ease;
+    }
+
+    .statsCard {
+        bottom: 14rem;
+        left: 8rem;
+        margin: 0 auto;
+        height: 80%;
+        width: 50%;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+}
+
+/*///////////////////////////////////////////HD////////////////////////////////*/
+
+@media(min-width:1366px) {
+
+    .mainDetail {
+        margin: 2rem auto;
+        width: 60%;
+        height: 85vh;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 55vw;
+        top: 13rem;
+    }
+
+    .nextBack img {
+        width: 2%;
+    }
+
+    .pokeImg {
+        width: 30%;
+        top: 4rem;
+        left: 5rem;
+        z-index: +3;
+        transition: 1s ease;
+    }
+
+    .statsCard {
+        bottom: 18rem;
+        left: 8rem;
+        margin: 0 auto;
+        height: 90%;
+        width: 50%;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+}
+
+/*///////////////////////////////////////FHD///////////////////////////////////////////*/
+@media(min-width:1920px) {
     html {
         background-color: white;
     }
@@ -255,7 +380,7 @@
     }
 
     .nextBack img {
-        width: 2%;
+        width: 1%;
     }
 
     .pokeImg {
@@ -267,13 +392,56 @@
     }
 
     .statsCard {
-        bottom: 18rem;
+        bottom: 20rem;
         left: 8rem;
         margin: 0 auto;
         height: 85%;
         width: 50%;
         background-color: white;
-        /* z-index: +1; */
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+}
+
+/*//////////////////////////////////////////4K///////////////////////////////////////////////////////////////////*/
+@media(min-width:3840px) {
+    html {
+        background-color: white;
+    }
+
+    .mainDetail {
+        margin: 5rem auto;
+        width: 80%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 70vw;
+        top: 30rem;
+    }
+
+    .nextBack img {
+        width: 1%;
+    }
+
+    .pokeImg {
+        width: 20%;
+        top: 20rem;
+        left: 20rem;
+        z-index: +3;
+        transition: 1s ease;
+    }
+
+    .statsCard {
+        bottom: 40rem;
+        left: 22rem;
+        margin: 0 auto;
+        height: 85%;
+        width: 50%;
+        background-color: white;
         border-radius: 2%;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     }

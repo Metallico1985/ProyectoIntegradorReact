@@ -4,6 +4,7 @@ import pokemones from '../Api/Data';
 import { useState } from 'react'
 import SearchBar from '../Components/Header/SearchBar/SearchBar';
 import LogoAndButton from '../Components/Header/LogoAndButton/LogoAndButton'
+import './Home.css'
 //prueba
 function Home() {
     const [list, setList] = useState(pokemones);

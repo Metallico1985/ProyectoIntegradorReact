@@ -51,44 +51,6 @@ function Detail() {
         navigate("/detail/" + pokeId)
     }
 
-    /*////////////////////////////////////////////////////////////////////////////*/
-
-
-
-    //Busco las posiciones de los pokemones anterior y posterior
-    // El map devuelve undefined en los casos que poke.id!=id
-    // hago un filter para eliminar los undefined
-    // const posiciones = pokemones.map((poke, index) => {
-    //     if (poke.id === id) {
-    //         if (index == 0) {
-    //             return { indexAnterior: pokemones.length - 1, indexPosterior: index + 1 }
-    //         } else if (index == pokemones.length - 1) {
-    //             return { indexAnterior: index - 1, indexPosterior: 0 }
-    //         }
-    //         return { indexAnterior: index - 1, indexPosterior: index + 1 }
-    //     }
-
-    // }).filter(x => { return x })
-
-    // const derecha = () => {
-    //     if (posiciones.length) {
-    //         const objPosicion = posiciones[0]
-    //         //Busco el id del pokemon en la base de datos en la posicion que corresponda
-    //         const pokemon = pokemones[objPosicion.indexPosterior]
-    //         const pokeId = pokemon.id
-    //         navigate("/detail/" + pokeId)
-
-    //     }
-    // }
-
-    // const izquierda = () => {
-    //     if (posiciones.length) {
-    //         const objPosicion = posiciones[0]
-    //         const pokemon = pokemones[objPosicion.indexAnterior]
-    //         const pokeId = pokemon.id
-    //         navigate("/Detail/" + pokeId)
-    //     }
-    // }
     return (
         <div className="respFlex">
             <div className="mainDetail" style={{ backgroundColor: item.color[0] }}>
