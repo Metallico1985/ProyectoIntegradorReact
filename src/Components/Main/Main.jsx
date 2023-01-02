@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 
 function Main(props) {
     return (
-<<<<<<< HEAD
         <div className="mainContainerGrid">
-=======
->>>>>>> b54d4f0307f91aaa1e1603b9b7a38a42f6024fd3
         <div className="gridContainer">
             <div className="cardContainer">
                 {props.list.map((item) => (
@@ -32,10 +29,7 @@ function Main(props) {
                 ))}
             </div>
         </div>
-<<<<<<< HEAD
         </div>
-=======
->>>>>>> b54d4f0307f91aaa1e1603b9b7a38a42f6024fd3
     );
 }
 
