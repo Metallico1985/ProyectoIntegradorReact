@@ -1,0 +1,36 @@
+import React from "react";
+import "./Main.css";
+import { Link } from "react-router-dom";
+
+function Main(props) {
+    return (
+        <div className="mainContainerGrid">
+        <div className="gridContainer">
+            <div className="cardContainer">
+                {props.list.map((item) => (
+                    <Link
+                        to={`detail/${item.id}`}
+                        className="card color"
+                        style={{ borderColor: item.color[0] }}
+                    >
+                        <div className="cardId" style={{ color: item.color[0] }}>
+                            {"#" + item.id}
+                        </div>
+                        <div className="cardImg">
+                            <img src={item.img} alt="" />
+                        </div>
+                        <div
+                            className="cardName"
+                            style={{ backgroundColor: item.color[0] }}
+                        >
+                            {item.name}
+                        </div>
+                    </Link>
+                ))}
+            </div>
+        </div>
+        </div>
+    );
+}
+
+export default Main;

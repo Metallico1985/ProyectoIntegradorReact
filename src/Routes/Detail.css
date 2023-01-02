@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.mainDetail {
+    width: 100vw;
+    height: 100%;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nextBack {
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nextBack img {
+    width: 3%;
+    margin-bottom: 0.5rem;
+}
+
+.headerDetail {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nameDetContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.nameDetContainer h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nameDetContainer h4 {
+    font-weight: 700;
+}
+
+.nameDetContainer img {
+    height: auto;
+    margin-right: 1rem;
+}
+
+.pokeImg {
+    width: 60%;
+    margin: 0 auto;
+}
+.statsCard {
+  
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    height: 67%;
+    width: 98%;
+    background-color: white;
+    border-radius: 15px
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+
+.typeBtn {
+    border-radius: 2rem;
+    padding: 0.2rem 1rem;
+    color: white;
+    margin: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.aboutTitle {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutTitle h3 {
+    font-weight: 700;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    gap: 1rem;
+}
+
+.dataCont {
+    display: flex;
+    flex-direction: column;
+    border-right: 0.5px dotted gray;
+    text-align: center;
+    padding-right: 2rem;
+    gap: 1rem;
+    font-weight: 200;
+}
+
+.dataCont p {
+    font-size: 10px;
+}
+
+.dataCont img {
+    margin-right: 0.5rem;
+}
+
+.data {
+    display: flex;
+}
+
+.moves {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moves p {
+    font-size: 10px;
+}
+
+.description {
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.statsTitle {
+    padding: 1rem;
+    text-align: center;
+}
+
+.statsTitle h3 {
+    font-weight: 700;
+}
+
+.statName {
+
+    width: 30%;
+    text-align: center;
+    border-right: 1px solid #6b6c6b;
+}
+
+.slider {
+    padding-right: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/*//////////////////MEDIA QUERY//////////////////////////////*/
+/* //////////////////////SMALL Mobile///////////////////////*/
+@media (min-width: 360px) {
+
+    .mainDetail {
+height: 100%;
+    }
+
+    .pokeImg {
+        width: 50%;
+        display: flex;
+    }
+
+    .nextBack {
+        width: 95%;
+    }
+
+    .nextBack img {
+        width: 2%;
+    }
+
+    .statsCard {
+
+        height: 100%;
+        border-radius: 2%;
+        padding-bottom: 2rem;
+    }
+
+    .typeBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding: 0.2rem 1rem;
+        color: white;
+        margin: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+/*////////////////////////TABLET////////////////////////////////*/
+
+@media (min-width: 768px) {
+
+    .mainDetail {
+        height: 100%;
+        width: auto;
+    }
+    .pokeImg {
+        width: 40%;
+    }
+    .nextBack img {
+        width: 1%;
+        margin-bottom: 0.5rem;
+    }
+    .nextBack {
+        margin-bottom: 1rem;
+    }
+    .statsCard {
+        margin: 0 auto;
+        height: 60%;
+        width: 90%;
+        background-color: white;
+        border-radius: 15px;
+    }
+}
+
+/*//////////////////////////Generic Notebook//////////////////////////////////////*/
+@media(min-width:1280px) {
+    .mainDetail {
+        margin: 2rem auto;
+        padding-bottom: 1rem;
+        width: 70%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 65vw;
+        top: 10rem;
+    }
+
+    .nextBack img {
+        width: 1%;
+    }
+
+    .pokeImg {
+        width: 30%;
+    }
+
+    .statsCard {
+    
+        margin: 0 auto;
+        height: 80%;
+        width: 70%;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+}
+
+/*///////////////////////////////////////////HD////////////////////////////////*/
+
+@media(min-width:1350px) {
+
+    .mainDetail {
+        margin: 2rem auto;
+        padding-bottom: 2rem;
+        width: 70%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 55vw;
+    }
+
+    .nextBack img {
+        width: 1%;
+    }
+
+    .pokeImg {
+        width: 30%;
+    }
+
+    .statsCard {
+        margin: 0 auto;
+        height: 90%;
+        width: 70%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+}
+
+/*///////////////////////////////////////FHD///////////////////////////////////////////*/
+/* @media(min-width:1920px) {
+    html {
+        background-color: white;
+    }
+
+    .mainDetail {
+        margin: 5rem auto;
+        width: 50%;
+        height: 75vh;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 45vw;
+        top: 13rem;
+    }
+
+    .nextBack img {
+        width: 1%;
+    }
+
+    .pokeImg {
+        width: 30%;
+        top: 3rem;
+        left: 5rem;
+        z-index: +3;
+        transition: 1s ease;
+    }
+
+    .statsCard {
+        bottom: 20rem;
+        left: 8rem;
+        margin: 0 auto;
+        height: 85%;
+        width: 50%;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+} */
+
+/*//////////////////////////////////////////4K///////////////////////////////////////////////////////////////////*/
+@media(min-width:3840px) {
+    html {
+        background-color: white;
+    }
+
+    .mainDetail {
+        margin: 5rem auto;
+        width: 80%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .nextBack {
+        margin: 0 auto;
+        width: 70vw;
+        top: 30rem;
+    }
+
+    .nextBack img {
+        width: 1%;
+    }
+
+    .pokeImg {
+        width: 20%;
+        top: 20rem;
+        left: 20rem;
+        z-index: +3;
+        transition: 1s ease;
+    }
+
+    .statsCard {
+        bottom: 40rem;
+        left: 22rem;
+        margin: 0 auto;
+        height: 85%;
+        width: 50%;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+}

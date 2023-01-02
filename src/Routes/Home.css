@@ -1,0 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+.mainAppContainer {
+    background-color: rgb(47, 47, 47);
+    height: 100vh;
+}
