@@ -3,7 +3,12 @@
     margin: 0px
 }
 
+<<<<<<< HEAD
 .mainAppContainer {
     background-color: rgb(47, 47, 47);
     height: 100vh;
+=======
+body {
+    background-color: rgb(47, 47, 47);
+>>>>>>> b54d4f0307f91aaa1e1603b9b7a38a42f6024fd3
 }

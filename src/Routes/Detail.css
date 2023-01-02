@@ -299,50 +299,6 @@ height: 100%;
     }
 }
 
-/*///////////////////////////////////////FHD///////////////////////////////////////////*/
-/* @media(min-width:1920px) {
-    html {
-        background-color: white;
-    }
-
-    .mainDetail {
-        margin: 5rem auto;
-        width: 50%;
-        height: 75vh;
-        border-radius: 15px;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    }
-
-    .nextBack {
-        margin: 0 auto;
-        width: 45vw;
-        top: 13rem;
-    }
-
-    .nextBack img {
-        width: 1%;
-    }
-
-    .pokeImg {
-        width: 30%;
-        top: 3rem;
-        left: 5rem;
-        z-index: +3;
-        transition: 1s ease;
-    }
-
-    .statsCard {
-        bottom: 20rem;
-        left: 8rem;
-        margin: 0 auto;
-        height: 85%;
-        width: 50%;
-        background-color: white;
-        border-radius: 2%;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    }
-} */
-
 /*//////////////////////////////////////////4K///////////////////////////////////////////////////////////////////*/
 @media(min-width:3840px) {
     html {
