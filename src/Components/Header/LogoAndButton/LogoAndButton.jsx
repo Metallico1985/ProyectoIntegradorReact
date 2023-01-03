@@ -1,24 +1,26 @@
 import './LogoAndButton.css'
+import {Link} from "react-router-dom"
 
 function LogoAndButton(props) {
     return (
         <div>
             <div className="mainContainer">
                 <div className="logo">
-                    <img src="../Images/Pokeball.png" alt="" />
-                    <h1>Pokedex</h1>
+                   <img src="../Images/poke.png" alt="" />
+                    
                 </div>
+                <div className='title'><h1>Pokedex</h1></div>
                 <div className="btnContainer">
                     {props.active ? (
                         <div className="sortByName">
                             <button onClick={props.sortByName}>
-                                <img src="../Icons/SortById.png" alt="" />
+                                <img src="../Icons/sortbynumber.svg" alt="" />
                             </button>
                         </div>
                     ) : (
                         <div className="sortById">
                             <button onClick={props.sortById}>
-                                <img src="../Icons/SortByName.png" alt="" />
+                                <img src="../Icons/sortbyalphabet.svg" alt="" />
                             </button>
                         </div>
                     )}
