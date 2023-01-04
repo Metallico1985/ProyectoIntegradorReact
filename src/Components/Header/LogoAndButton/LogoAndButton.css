@@ -56,6 +56,9 @@ button {
         width: 23%;
         text-align: end;
     }
+    .btnContainer img{
+        width: 15%;
+     }
 }
 @media (min-width: 500px) {
 
