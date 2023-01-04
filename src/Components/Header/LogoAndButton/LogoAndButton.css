@@ -40,7 +40,7 @@ button {
 /*////////////////RESPONSIVE/////////////////*/
 @media (min-width: 300px) {
     .mainContainer {
-        width: 100%;
+        width: 90%;
     }
     .title {
         font-size: 1rem;
@@ -62,6 +62,9 @@ button {
 }
 @media (min-width: 500px) {
 
+    .mainContainer {
+        width: 85%;
+    }
     .title {
 
         font-size: 1rem;
@@ -88,4 +91,7 @@ button {
         font-size: 1.5rem;
         -webkit-text-stroke: 2.5px black;
     }
+    .btnContainer img{
+        width: 8%;
+     }
 }
